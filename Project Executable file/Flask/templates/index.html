@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Health Status Check</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .header .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 14px;
+        }
+        .hero {
+            text-align: center;
+            padding: 20px 20px;
+            background-color: #e9ecef;
+        }
+        .navbar {
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .navbar ul li {
+            display: inline;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 16px;
+        }
+        .navbar ul li a.active {
+            font-weight: bold;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #d4e157;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group select,
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group button {
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="contact-info">
+            <span>📧 contact@example.com</span>
+            <span>📞 +91 78453 23860</span>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>Beyond the veil of wellness</h1>
+    </div>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="active">Let's Go</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="form-container">
+            <h2>Enter your Details for Animal Health Status Check</h2>
+            <form action="/submit" method="post">
+                <div class="form-group">
+                    <label for="animalName">Animal Name</label>
+                    <select id="animalName" name="animalName">
+                        <option value="0">Birds</option>
+                        <option value="1">Cats</option>
+                        <option value="dogs">Dogs</option>
+                        <option value="rabbit">rabbit</option>
+                        <option value="cow">cow</option>
+                        <option value="chicken">chicken</option>
+                        <option value="cattle">cattle</option>
+                        <option value="mammal">mammal</option>
+                        <option value="horse">horse</option>
+                        <option value="turtle">turtle</option>
+                        <option value="hamster">hamster</option>
+                        <option value="Lion">Lion</option>
+                        <option value="fox">fox</option>
+                        <option value="pigs">pigs</option>
+                        <option value="Goat">Goat</option>
+                        <option value="deer">deer</option>
+                        <option value="monkey">monkey</option>
+                        <option value="sheep">sheep</option>
+                        <option value="fowl">fowl</option>
+                        <option value="duck">duck</option>
+                        <option value="other birds">other birds</option>
+                        <option value="snake">snake</option>
+                        <option value="horse">horse</option>
+                        <option value="donkey">donkey</option>
+                        <option value="mules">mules</option>
+                        <option value="elephant">elephant</option>
+                        <option value="elk">elk</option>
+                        <option value="wapiti">wapiti</option>
+                        <option value="mule deer">mule deer</option>
+                        <option value="Black-tailed deer">Black-tailed deer</option>
+                        <option value="sika deer">sika deer</option>
+                        <option value="white-tailed deer">white-tailed deer</option>
+                        <option value="reindeer">reindeer</option>
+                        <option value="moos">moos</option>
+                        <option value="tiger">tiger</option>
+                        <option value="buffaloes">buffaloes</option>
+                        <option value="wolves">wolves</option>
+                        <option value="hyaenas">hyaenas</option>
+                        
+                        <!-- Add other options as needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="symptoms1">Symptoms1</label>
+                    <input type="text" id="symptoms1" name="symptoms1">
+                </div>
+                <div class="form-group">
+                    <label for="symptoms2">Symptoms2</label>
+                    <input type="text" id="symptoms2" name="symptoms2">
+                </div>
+                <div class="form-group">
+                    <label for="symptoms3">Symptoms3</label>
+                    <input type="text" id="symptoms3" name="symptoms3">
+                </div>
+                <div class="form-group">
+                    <label for="symptoms4">Symptoms4</label>
+                    <input type="text" id="symptoms4" name="symptoms4">
+                </div>
+                <div class="form-group">
+                    <label for="symptoms5">Symptoms5</label>
+                    <input type="text" id="symptoms5" name="symptoms5">
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
